@@ -1,14 +1,14 @@
 # Rag system to chat with pdfs
 
 ## Dataset Generation
-We have used ChatGpt-4o to generate a synthetic data bassed on a given pdf. The prompts used for generating the dataset are stored in dir `dataset_generation_helper`.
+We have used ChatGpt-4o to generate a synthetic data based on a given pdf. The prompts used for generating the dataset are stored in dir `dataset_generation_helper`.
 
 TODO: To look into llamaindex/langchain dataset generation API and check if I can use custom prompts within their methods. Current dataset generation was done manually so this can be automated for scaling.
 
 ### Dataset Sample
 Below is a sample row from the dataset used in the RAG system:
 
-| Question                                                        | Answer                                                        | Topic          | Dataset Type |
+| Question                                                        | answer                                                        | topic          | dataset Type |
 |-----------------------------------------------------------------|---------------------------------------------------------------|----------------|--------------|
 | What does the insurance cover in case of fire damage to my car? | Fire damage to your car is covered under the main policy.     | Fire and Theft | qa           |
 

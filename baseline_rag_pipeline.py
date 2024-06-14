@@ -21,7 +21,7 @@ from datasets import Dataset
 
 
 # Setting Up the Environment (Replace with your API key)
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 # 1. Load the PDF Document
 embeddings = OpenAIEmbeddings()  # Create an object for generating embeddings

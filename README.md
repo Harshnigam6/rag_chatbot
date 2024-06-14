@@ -90,13 +90,13 @@ I also observe that metrics are not very stable or have significant biases how i
 1. For example, in  row 12 in baseline_result.csv, we have the following ground truth and generated answer:
 Question: Does the policy provide coverage for pets injured in a car accident?
 
-Ground truth: Based on the provided context, the policy does not explicitly mention coverage for pets injured in a car accident. The focus of the policy appears to be on personal benefits, medical expenses, personal accident coverage for individuals involved in a car accident, and coverage for damage to the car itself. If coverage for pets is desired, it would be advisable to check with the insurance provider or review the policy in detail for any specific provisions related to pets.
+  Ground truth: Based on the provided context, the policy does not explicitly mention coverage for pets injured in a car accident. The focus of the policy appears to be on personal benefits, medical expenses, personal accident coverage for individuals involved in a car accident, and coverage for damage to the car itself. If coverage for pets is desired, it would be advisable to check with the insurance provider or review the policy in detail for any specific provisions related to pets.
 
-Generated answer: The document does not specify coverage for pets injured in car accidents.
+  Generated answer: The document does not specify coverage for pets injured in car accidents.
 
-Faithfullnes = 0, Answer relvance = 0
+  Faithfullnes = 0, Answer relvance = 0
 
-This is certainly wrong evaluation as the generated answer clearly answers the question correctly. We can find the similar behaviour in row 13.
+  This is certainly wrong evaluation as the generated answer clearly answers the question correctly. We can find the similar behaviour in row 13.
 
 2. In row 14 and 15, the RAGAS produced null under Faithfulness, maybe a bug?
 
@@ -105,6 +105,14 @@ This is certainly wrong evaluation as the generated answer clearly answers the q
 4. In row 21, I find that the ground truth is also incorrect. Maybe ChatGpt failed at reading this document.
 
 Based on the shortcomings of the metrics and dataset generation, it would be strongly recomended that the evaluation dataset be quality checked extensively. 
+
+## Improving Pefroamcne
+This is future work based on availability of time and openAI credits.
+1. Detection of tablur data and finding a better way to parse this information such that it can be easily used in context by the LLM. This will improve performance where LLM needs to look at table for specific values.
+2. Run a random search (or any hyperparameter-tuning algorithm) to find the optimal parameters of our pipeline like chunk_size, text_splitter, embeddings and etc.
+3. The generated dataset is of not the best quality due to ChatGpt generation with much human intervention. 
+
+## ChatBot using streamlit application
 
 
 

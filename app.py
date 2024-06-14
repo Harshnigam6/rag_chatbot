@@ -9,7 +9,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_community.vectorstores import FAISS
 
 # Load environment variables
-os.environ["OPENAI_API_KEY"] = "sk-proj-heBpwSbcWiNlkUDGM3DIT3BlbkFJCK4au0r9ypGtj2FS8IMV"
+os.environ["OPENAI_API_KEY"] = "" # Put your key here 
 
 # Load PDF and set up retrieval chain
 embeddings = OpenAIEmbeddings()

@@ -4,3 +4,4 @@ langchain
 faiss-cpu
 langchain_text_splitters 
 ragas
+streamlit

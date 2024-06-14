@@ -29,13 +29,13 @@ The dataset consists of the following columns:
   - **retrieval**: Focuses on queries about references, where the user asks under which topic or section they can find specific content. This type specifically tests if the modelcan retrive correct topic for a given user question
 
 
-Each type can help us find the lacking points of our RAG system.
+Each type can help us find the lacking points of our RAG system. The dataset is saved as csv as **dataset.csv** in the root level of the repo.
 
 ### Future work for dataset generation
 There are other question types we can consider to make our test dataset more robust like 
 - reasoning tasks
 - Synthesing questiong regarding specific places, entities and etc.
-- Questions that requires reading content from tables should be add **Very important**
+- Questions that requires reading content from tables should be added **Very important**
 
 ## Evaluation metrics
 
@@ -113,6 +113,17 @@ This is future work based on availability of time and openAI credits.
 3. The generated dataset is of not the best quality due to ChatGpt generation with much human intervention. 
 
 ## ChatBot using streamlit application
+
+![Simple chatbot](assets/chatbot.png)
+
+A simple chatbot has been implemented using streamlit. The app does not support multi-dialogue  and can only answer and dispalce one pair of question, answer.
+
+We can also see the context fetched for each question.
+
+To run the chatbot, ensure you update your **OpenAI key** in **app.py** and run
+`
+streamlit run app.py
+`
 
 
 

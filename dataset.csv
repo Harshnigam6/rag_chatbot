@@ -1,4 +1,4 @@
-Question,Answer,Topic,dataset_type
+question,answer,topic,dataset_type
 What does the insurance cover in case of fire damage to my car?,Fire damage to your car is covered under the market value.,Fire and Theft,qa
 Am I covered for theft if I leave my car unlocked?,"No, claims for theft or attempted theft will not be paid if the car is left unlocked.",FAQs,qa
 How much will Churchill pay if my car's windscreen is damaged?,The cost of repairing or replacing the car's windscreen up to its UK market value.,Windscreen Damage,qa

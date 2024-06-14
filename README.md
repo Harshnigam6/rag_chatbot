@@ -65,7 +65,6 @@ Vector database = Document
 System prompt for LLM = Provided in baseline_rag_pipeline.py
 
 
-
 #### Baseline Performance
 
 | Metric             | Value  |
@@ -74,7 +73,10 @@ System prompt for LLM = Provided in baseline_rag_pipeline.py
 | Answer Relevancy   | 0.8743 |
 | Number of Questions| 35     |
 
-A detailed report with each of these per question is provided at: _______. In the above tables we have just taken a mean of the metric across all the questions.
+A detailed report with each of these per question is provided at: [Download baseline results](report/baseline_result.csv)
+. In the above tables we have just taken a mean of the metric across all the questions.
+
+To reproduce the results run **baseline_rag_pipeline.py**. Make sure to put your OpanAI key.
 
 Here is the metrics segmented by dataset/question type
 ![Metrics Per Dataset Type](assets/metrics_per_dataset_type.png)
